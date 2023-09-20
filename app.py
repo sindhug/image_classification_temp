@@ -50,6 +50,7 @@ if image:
 
     #predictions
     response, scores = get_prediction(payload)
+    predicton_coral = "I dont know"
 
     if response == 0:
       predicton_coral = "Bleached"
