@@ -50,16 +50,15 @@ if image:
 
     #predictions
     response, scores = get_prediction(payload)
-    predicton_coral = "I dont know"
 
     if response == 0:
-      predicton_coral = "Bleached"
+      prediction_coral = "Bleached"
     else:
       prediction_coral = "Healthy"
 
     col1, col2 = st.columns(2)
     with col1:
-      st.metric("Prediction Label", predicton_coral)
+      st.metric("Prediction Label", prediction_coral)
     with col2:
       st.metric("Confidence Score", max(scores))
 
