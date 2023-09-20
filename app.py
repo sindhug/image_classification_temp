@@ -58,7 +58,7 @@ if image:
 
     col1, col2 = st.columns(2)
     with col1:
-      st.metric("Prediction Label", response)
+      st.metric("Prediction Label", predicton_coral)
     with col2:
       st.metric("Confidence Score", max(scores))
 
